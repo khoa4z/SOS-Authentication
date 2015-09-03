@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="ngAthen">
+<head lang="en">
+    <title>{{title}}</title>
+    <meta charset="UTF-8">
+    <!-- Mobile Stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Bring in Bootstrap -->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css"/>
+</head>
+<body ng-controller="AuthorizationController">
+<div ng-include src="'partials/header.html'"></div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-3 col-md-2 sidebar">
+            <!--<sos-nav></sos-nav>-->
+        </div>
+
+        <main class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <ui-view></ui-view>
+        </main>
+    </div>
+</div>
+
+<script src="angular/angular.js"></script>
+<script src="angular-messages/angular-messages.js"></script>
+<script src="angular-resource/angular-resource.js"></script>
+<script src="angular-ui-router/release/angular-ui-router.js"></script>
+<script src="ng-lodash/build/ng-lodash.js"></script>
+
+<script src="js/athen.js"></script>
+<script src="js/login/login.js"></script>
+<script src="js/register/register.js"></script>
+<script src="js/action/action.js"></script>
+
+<script src="jquery/dist/jquery.js"></script>
+<script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
